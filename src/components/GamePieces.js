@@ -6,7 +6,7 @@ const GamePieces = ({ setScore, onGameOver }) => {
     const [snake, setSnake] = useState([{ x: 100, y: 50 }, { x: 95, y: 50 }]);
     const [food, setFood] = useState({ x: 180, y: 90 });
     const [direction, setDirection] = useState(null);
-
+// useEffect
     useEffect(() => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext("2d");
